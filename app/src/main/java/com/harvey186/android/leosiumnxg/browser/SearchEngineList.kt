@@ -18,15 +18,13 @@ class SearchEngineList {
                 name = "Google",
                 icon = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888),
                 type = SearchEngine.Type.BUNDLED,
-                resultUrls = listOf("https://www.google.com/?q={searchTerms}"),
-                suggestUrl = "https://www.google.com/"
             ),
             SearchEngine(
                 id = "ddg",
                 name = "DuckDuckGo",
                 icon = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888),
                 type = SearchEngine.Type.BUNDLED,
-                resultUrls = listOf("https://www.duckduckgo.com/?q={searchTerms}"),
+                resultUrls = listOf("https://leosearch.ddns.net/?q={searchTerms}"),
                 suggestUrl = "https://www.duckduckgo.com/"
             ),
             SearchEngine(
@@ -36,14 +34,6 @@ class SearchEngineList {
                 type = SearchEngine.Type.BUNDLED,
                 resultUrls = listOf("https://www.bing.com/?q={searchTerms}"),
                 suggestUrl = "https://www.bing.com/"
-            ),
-            SearchEngine(
-                id = "baidu",
-                name = "Baidu",
-                icon = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888),
-                type = SearchEngine.Type.CUSTOM,
-                resultUrls = listOf("https://www.baidu.com/s?wd={searchTerms}"),
-                suggestUrl = "https://www.baidu.com/"
             ),
             SearchEngine(
                 id = "yandex",
@@ -74,6 +64,13 @@ class SearchEngineList {
                 icon = BitmapFactory.decodeByteArray(startPageLogo, 0, startPageLogo.size),
                 type = SearchEngine.Type.CUSTOM,
                 resultUrls = listOf("https://startpage.com/sp/search?query={searchTerms}")
+            ),
+                SearchEngine(
+                id = "leosearch",
+                name = "LeOSearch",
+                icon = BitmapFactory.decodeByteArray(startPageLogo, 0, startPageLogo.size),
+                type = SearchEngine.Type.CUSTOM,
+                resultUrls = listOf("https://leosearch.ddns.net/?q={searchTerms}")
             )
         )
     }

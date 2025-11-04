@@ -22,7 +22,7 @@ android {
     namespace 'com.cookiejarapps.android.smartcookieweb'
 
     defaultConfig {
-        applicationId "com.cookiejarapps.android.smartcookieweb"
+        applicationId "com.harvey186.android.leosiumnxg"
         minSdkVersion 21
         targetSdkVersion 35
         // Increment by 4 with each update
