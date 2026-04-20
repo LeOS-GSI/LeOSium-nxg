@@ -1,0 +1,199 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.11.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+WARNING: The option setting 'android.defaults.buildfeatures.buildconfig=true' is deprecated.
+The current default is 'false'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+To keep using this feature, add the following to your module-level build.gradle files:
+    android.buildFeatures.buildConfig = true
+or from Android Studio, click: `Refactor` > `Migrate BuildConfig to Gradle Build Files`.
+
+> Task :clean
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+WARNING: [Processor] Library '/home/ich/.gradle/caches/modules-2/files-2.1/org.mozilla.components/feature-media/140.0.4/54927bfda62e69ef83bb63ba85bcf7170c3356a1/feature-media-140.0.4.aar' contains references to both AndroidX and old support library. This seems like the library is partially migrated. Jetifier will try to rewrite the library anyway.
+ Example of androidX reference: 'androidx/annotation/VisibleForTesting'
+ Example of support library reference: 'android/support/v4/media/session/PlaybackStateCompat'
+
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:generateDebugBuildConfig
+> Task :app:generateSafeArgsDebug
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:mergeDebugResources
+> Task :app:processDebugMainManifest
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugManifest
+> Task :app:javaPreCompileDebug
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:processDebugManifestForPackage
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeLibDexDebug
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:mergeDebugNativeLibs
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libcrashhelper.so, libdatastore_shared_counter.so, libfreebl3.so, libgkcodecs.so, libjnidispatch.so, liblgpllibs.so, libmegazord.so, libminidump_analyzer.so, libmozavcodec.so, libmozavutil.so, libmozglue.so, libnss3.so, libplugin-container.so, libsoftokn3.so, libxul.so. Run with --info option to learn more.
+
+> Task :app:processDebugResources
+> Task :app:mergeExtDexDebug
+
+> Task :app:kspDebugKotlin
+w: [ksp] /home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/shortcuts/ShortcutDatabase.kt:10: Schema export directory was not provided to the annotation processor so Room cannot export the schema. You can either provide `room.schemaLocation` annotation processor argument by applying the Room Gradle plugin (id 'androidx.room') OR set exportSchema to false.
+
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:kaptDebugKotlin
+
+> Task :app:compileDebugKotlin
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/BaseBrowserFragment.kt:434:21 'fun requestPermissions(p0: Array<(out) String!>, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/BaseBrowserFragment.kt:465:21 'fun requestPermissions(p0: Array<(out) String!>, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/BaseBrowserFragment.kt:761:24 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/BaseBrowserFragment.kt:784:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/BrowserActivity.kt:128:13 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/BrowserActivity.kt:268:24 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/BrowserActivity.kt:274:15 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/BrowserApp.kt:1:16 This code uses error suppression for 'INLINE_FROM_HIGHER_PLATFORM'. While it might compile and work, the compiler behavior is UNSPECIFIED and WILL NOT BE PRESERVED. Please report your use case to the Kotlin issue tracker instead: https://kotl.in/issue
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/BrowserApp.kt:42:9 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/BrowserApp.kt:85:41 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/AddonDetailsActivity.kt:67:43 'fun <T : Parcelable!> getParcelableExtra(p0: String!): T?' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/AddonDetailsActivity.kt:148:23 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/AddonSettingsActivity.kt:44:43 'fun <T : Parcelable!> getParcelableExtra(p0: String!): T?' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/AddonSettingsActivity.kt:68:47 'fun <T : Parcelable!> getParcelable(p0: String?): T?' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/AddonsFragment.kt:3:8 'class ProgressDialog : AlertDialog' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/AddonsFragment.kt:71:9 'fun setHasOptionsMenu(p0: Boolean): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/AddonsFragment.kt:146:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/AddonsFragment.kt:287:41 'class ProgressDialog : AlertDialog' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/AddonsFragment.kt:287:56 'static fun show(p0: Context!, p1: CharSequence!, p2: CharSequence!, p3: Boolean): ProgressDialog!' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/InstalledAddonDetailsActivity.kt:39:43 'fun <T : Parcelable!> getParcelableExtra(p0: String!): T?' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/NotYetSupportedAddonActivity.kt:29:44 'fun <T : Parcelable!> getParcelableArrayListExtra(p0: String!): ArrayList<T!>?' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/NotYetSupportedAddonActivity.kt:49:48 'fun <T : Parcelable!> getParcelableArrayList(p0: String?): ArrayList<T!>?' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/NotYetSupportedAddonActivity.kt:76:27 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/PermissionsDetailsActivity.kt:34:43 'fun <T : Parcelable!> getParcelableExtra(p0: String!): T?' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/PermissionsDetailsActivity.kt:77:23 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/WebExtensionPopupFragment.kt:73:41 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/WebExtensionPopupFragment.kt:73:56 'fun getMetrics(p0: DisplayMetrics!): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/WebExtensionPopupFragment.kt:190:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/addons/WebExtensionTabletPopupFragment.kt:178:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/SwipeGestureLayout.kt:9:8 'class GestureDetectorCompat : Any' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/SwipeGestureLayout.kt:65:35 'constructor(p0: @NonNull() Context, p1: @NonNull() GestureDetector.OnGestureListener): GestureDetectorCompat' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/ArrayRecyclerAdapter.kt:94:26 'val adapterPosition: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/ArrayRecyclerAdapter.kt:155:71 'val adapterPosition: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/ArrayRecyclerAdapter.kt:157:79 'val adapterPosition: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/BookmarkAdapter.kt:101:53 'val adapterPosition: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/BookmarkFragment.kt:53:9 'fun setHasOptionsMenu(p0: Boolean): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/BookmarkFragment.kt:110:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/BookmarkFragment.kt:111:15 'fun onActivityCreated(p0: Bundle?): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/BookmarkFragment.kt:212:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/BookmarkFragment.kt:256:31 'static fun startActivity(p0: @NonNull() Context, p1: @NonNull() Intent, p2: @Nullable() Bundle?): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/BookmarkFragment.kt:271:17 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/BookmarkFragment.kt:326:37 'val adapterPosition: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/BookmarkFragment.kt:326:61 'val adapterPosition: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/bookmark/ui/PathViewAdapter.kt:58:85 'val adapterPosition: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/home/HomeFragment.kt:133:21 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/home/HomeFragment.kt:179:53 'static fun getBitmap(p0: ContentResolver!, p1: Uri!): Bitmap!' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/home/HomeFragment.kt:233:9 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/home/HomeFragment.kt:316:13 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/home/HomeFragment.kt:340:13 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/home/HomeFragment.kt:355:9 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/home/HomeFragment.kt:554:21 'when' is exhaustive so 'else' is redundant here.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/toolbar/ToolbarGestureHandler.kt:270:48 'val mandatorySystemGestureInsets: @NonNull() Insets' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/browser/toolbar/ToolbarGestureHandler.kt:270:93 'val stableInsetBottom: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/components/toolbar/BrowserMenuController.kt:107:39 'static fun startActivity(p0: @NonNull() Context, p1: @NonNull() Intent, p2: @Nullable() Bundle?): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/ext/View.kt:67:58 'static fun obtain(p0: Int, p1: Int, p2: Int, p3: Int, p4: Boolean, p5: Boolean): AccessibilityNodeInfo.CollectionItemInfo!' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/ext/View.kt:92:72 'static fun obtain(p0: Int, p1: Int, p2: Boolean): AccessibilityNodeInfo.CollectionInfo!' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/ext/View.kt:162:30 'val stableInsetBottom: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/history/HistoryActivity.kt:57:9 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/history/HistoryActivity.kt:72:25 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/history/HistoryActivity.kt:73:25 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/history/HistoryActivity.kt:96:41 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/history/HistoryActivity.kt:105:41 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/history/HistoryActivity.kt:123:55 'static fun startActivity(p0: @NonNull() Context, p1: @NonNull() Intent, p2: @Nullable() Bundle?): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/history/HistoryActivity.kt:146:41 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/history/HistoryActivity.kt:200:17 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/history/HistoryItemRecyclerViewAdapter.kt:53:47 Unchecked cast of 'Any!' to 'MutableList<VisitInfo>'.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/request/AppRequestInterceptor.kt:110:21 'static fun startActivity(p0: @NonNull() Context, p1: @NonNull() Intent, p2: @Nullable() Bundle?): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/search/SearchDialogFragment.kt:71:78 'static field SOFT_INPUT_ADJUST_RESIZE: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/search/SearchDialogFragment.kt:267:17 'fun toggleSoftInput(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/search/SearchDialogFragment.kt:286:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/search/SearchDialogFragment.kt:291:15 'fun onRequestPermissionsResult(p0: Int, p1: Array<(out) String!>, p2: IntArray): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/activity/SettingsActivity.kt:56:9 'fun onBackPressed(): Unit' is deprecated. This method has been deprecated in favor of using the
+      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.
+      The OnBackPressedDispatcher controls how back button events are dispatched
+      to one or more {@link OnBackPressedCallback} objects.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/AdvancedSettingsFragment.kt:4:8 'class ProgressDialog : AlertDialog' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/AdvancedSettingsFragment.kt:90:61 'static field yes: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/AdvancedSettingsFragment.kt:95:61 'static field no: Int' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/AdvancedSettingsFragment.kt:133:33 'class ProgressDialog : AlertDialog' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/AdvancedSettingsFragment.kt:133:48 'static fun show(p0: Context!, p1: CharSequence!, p2: CharSequence!, p3: Boolean): ProgressDialog!' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/ImportExportSettingsFragment.kt:100:9 'fun startActivityForResult(p0: Intent, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/ImportExportSettingsFragment.kt:110:9 'fun startActivityForResult(p0: Intent, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/ImportExportSettingsFragment.kt:119:9 'fun startActivityForResult(p0: Intent, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/ImportExportSettingsFragment.kt:129:9 'fun startActivityForResult(p0: Intent, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/ImportExportSettingsFragment.kt:143:35 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/ImportExportSettingsFragment.kt:354:31 Java type mismatch: inferred type is 'JSONArray?', but 'JSONArray' was expected.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/ImportExportSettingsFragment.kt:378:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/PrivacyAndSecuritySettingsFragment.kt:61:17 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/PrivacyAndSecuritySettingsFragment.kt:96:13 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/ich/src/LeOSium-nxg/app/src/main/java/com/harvey186/android/leosiumnxg/settings/fragment/PrivacyAndSecuritySettingsFragment.kt:129:9 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+
+> Task :app:compileDebugJavaWithJavac
+> Task :app:processDebugJavaRes
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeDebugJavaResource
+
+> Task :app:packageDebug
+There are no .so files available to package in the APK for riscv64.
+
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+[Incubating] Problems report is available at: file:///home/ich/src/LeOSium-nxg/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.11.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 3m 57s
+42 actionable tasks: 42 executed

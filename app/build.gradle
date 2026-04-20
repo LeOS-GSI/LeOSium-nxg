@@ -12,7 +12,7 @@ plugins {
 
 android {
 
-    compileSdkVersion 35
+    compileSdkVersion 36
     buildFeatures {
         buildConfig true
         viewBinding true
@@ -23,7 +23,7 @@ android {
 
     defaultConfig {
         applicationId "com.harvey186.android.leosiumnxg"
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 35
         // Increment by 4 with each update
         versionCode 128
@@ -127,7 +127,7 @@ dependencies {
     implementation "com.jakewharton:butterknife:$butterKnifeVersion"
     kapt "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
 
-    final def mozComponentsVersion = "140.0"
+    final def mozComponentsVersion = "149.0.2"
 
     // Mozilla compose components
     implementation "org.mozilla.components:compose-awesomebar:$mozComponentsVersion"
